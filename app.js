@@ -1,9 +1,9 @@
 require('dotenv').config()
-const app = require('express')
+const express = require('express')
 
 const app = express()
 
-app.length("/", (req, res) => {
+app.get("/", (req, res) => {
     res.send("<h1>Server is working</h1>")
 })
 
